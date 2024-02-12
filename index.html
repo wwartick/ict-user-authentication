@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>User Authentication</title>
 </head>
 <body>
     <div class="background-container">
+
         <div class="main-container">
 
-            <div class="profile-picture">
-                <img src="./assets/rhea.png" alt="womans world heavyweight champion Rhea Ripley">
-            </div>
+            <img id='mami' src="./assets/rhea.png" alt="womans world heavyweight champion Rhea Ripley">
+            
 
             <span>Rhea R. invited you to join</span>
-            <h2>Judgement Day</h2>
+
+            <div id="judgement-day">
+                <img id="wings" src='./assets/wings.png' alt="judgement day titantron wings">
+                <h2>The Judgement Day</h2>
+            </div>
 
             <div class="user-stats">
                 <span>46k Active users • 78k Total users</span>
             </div>
 
-            <span id="username">Username</span>
-
-            <div class="name-input">
+            <div class="name-input-container">
+                <span id="username">Username</span>
                 <input type="text" id='username-input' placeholder="How would you like people to call you?" required >
             </div>
 
@@ -37,11 +43,9 @@
             <a href="javascript:void(0);">Already have an account</a>
 
         </div>
+
+        <div id="shadow"></div>
     </div>
-
-
-
-    
     <script src="script.js"></script>
 </body>
 </html>

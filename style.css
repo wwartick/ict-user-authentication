@@ -1,0 +1,109 @@
+:root{
+    --primary-color: #201d83;
+    --secondary-color: #f402ac;
+    --large-background: #030305;
+    --main-shadow:  #c401c7;
+    --main-container: #d39bda;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background-container{
+    min-height: 100vh;
+    background-color: var(--large-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#shadow{
+    background-color: var(--main-shadow);
+    position: relative;
+    border-radius: 25px;
+    z-index: 0;
+    height: 28em;
+    width: 45em;
+    opacity: .05;
+    top: 12em;
+    
+}
+
+.main-container{
+    background-color: var(--main-container);
+    position: absolute;
+    z-index: 9999;
+    height: 45em;
+    width:28em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    color: var(--primary-color)
+}
+
+#mami {
+    border-radius: 50%;
+    height: 6em;
+    margin-top: 2em;
+    margin-bottom: -1em;
+    border: .75em solid #c401c752;
+}
+
+#judgement-day{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        & h2{
+            color: var(--main-container);
+            font-family: "Protest Revolution", sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+    
+        & #wings{
+            height: 3.3em;
+            width: 28em;
+            position: absolute;
+            bottom: -10px;
+            z-index: -1;
+            
+        }
+}
+
+.user-stats{
+    background-color: #c401c736;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+
+    & input{
+        width:24em;
+        height:3.5em;
+        background-color:  #d39bdab2;
+        color: #201d83;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        padding-left: 20px;
+        outline: none;
+    }
+
+    & ::placeholder{
+        color: #201d83cb;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+ 
+}
