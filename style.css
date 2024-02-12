@@ -33,26 +33,31 @@
 }
 
 .main-container{
-    background-color: var(--main-container);
+    background-color: #322db6;
     position: absolute;
     z-index: 9999;
-    height: 41em;
+    height: 43em;
     width:28em;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
-    color: var(--primary-color);
+    gap: 1.25em;
+    color: black;
+    font-weight: 700;
     font-family:"Roboto", sans-serif;;
 }
 
 a{
-    color: var(--secondary-color);
+    color: var(--main-container);
 }
 
 a:visited{
-    color: var(--main-shadow);
+    color: var(--secondary-color);
+}
+
+#rhea{
+    margin: 1em 0 2em 0;
 }
 
 #mami {
@@ -60,7 +65,7 @@ a:visited{
     height: 6em;
     margin-top: 2em;
     margin-bottom: -1em;
-    border: .75em solid #c401c752;
+    border: .75em solid black;
 }
 
 #judgement-day{
@@ -71,13 +76,15 @@ a:visited{
     
         & h2{
             color: var(--main-container);
+            top:-10px;
+            font-size: 2em;
             font-family: "Protest Revolution", sans-serif;
             font-weight: 400;
             letter-spacing: 2px;
         }
     
         & #wings{
-            height: 3.3em;
+            height: 5em;
             width: 28em;
             position: absolute;
             bottom: -10px;
@@ -87,7 +94,8 @@ a:visited{
 }
 
 .user-stats{
-    background-color: #c401c736;
+    margin-top: 1em;
+    background-color: #403af0a6;
     padding: 10px;
     border-radius: 10px;
 }
@@ -101,7 +109,6 @@ a:visited{
         width:24em;
         height:3.5em;
         background-color:  #d39bdab2;
-        color: #201d83;
         border: 1px solid var(--primary-color);
         border-radius: 10px;
         padding-left: 20px;
@@ -138,10 +145,6 @@ a:visited{
         cursor: pointer;
     }
 
-    .checkbox:active{
-        border: 2px solid var(--primary-color);
-    }
-
     span{
         margin-top: 10px;
         font-size: .85em;
@@ -154,7 +157,8 @@ a:visited{
     border-radius: 10px;
     outline: none;
     border:1px solid var(--secondary-color);
-    color:white;
+    color:black;
+    font-weight: 800;
     background-color: var(--secondary-color);
     margin: 1.5em 0;
 }
@@ -162,6 +166,9 @@ a:visited{
 #continue-btn:hover{
     cursor: pointer;
     scale: 1.1;
+    background-color: var(--primary-color);
+    border:1px solid var(--primary-color);
+    transition: all 500ms;
 }
 
 #account{
